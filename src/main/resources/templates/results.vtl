@@ -1,0 +1,13 @@
+<p><h3>Your triangle's side 1 is $myTriangle.getSide1()</h3></p>
+<p><h3>Your triangle's side 2 is $myTriangle.getSide2()</h3></p>
+<p><h3>Your triangle's side 3 is $myTriangle.getSide3()</h3></p>
+
+#if ($myTriangle.isTriangle() && $myTriangle.isEquilateral())
+  <p><h3>This is an Equilateral triangle!</h3></p>
+#elseif ($myTriangle.isTriangle() && $myTriangle.isIsosceles())
+  <p><h3>This is an Isosceles triangle!</h3></p>
+#elseif ($myTriangle.isTriangle() && $myTriangle.isScalene())
+  <p><h3>This is a Scalene triangle!</h3></p>
+#else
+  <p><h3>This is not even a triangle! Don't play. :)</h3></p>
+#end
